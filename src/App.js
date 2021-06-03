@@ -2,9 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
-import Contact from './components/Contact';
-import About from './components/About';
 import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
 import Register from './components/Register'
 
 import './style.scss'
