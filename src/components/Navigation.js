@@ -4,8 +4,8 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 export default function Navigation() {
     return (
-        <Navbar bg="dark" expand="lg" variant="dark">
-            <Navbar.Brand>
+        <Navbar bg="dark" expand="md" variant="dark">
+            <Navbar.Brand as="h1">
                 <LinkContainer to="/">
                     <Nav.Link>This Site</Nav.Link>
                 </LinkContainer>
@@ -19,8 +19,8 @@ export default function Navigation() {
                     <LinkContainer to="/about">
                         <Nav.Link>About</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="/contact">
-                        <Nav.Link>Contact</Nav.Link>
+                    <LinkContainer to="/grid">
+                        <Nav.Link>Grid</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/register">
                         <Nav.Link>Register</Nav.Link>

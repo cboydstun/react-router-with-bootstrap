@@ -1,7 +1,30 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-$myColor: red;
+$myColor: black;
+$mySize: 2rem;
 
 .App {
   color: $myColor;
+  font-size: $mySize;
+}
+
+.navbar-brand {
+  font-size: $mySize;
+}
+
+.nav-link {
+  padding: auto 2rem;
+  margin: auto 2rem;
+}
+
+.row-container {
+  border: black solid 2px;
+}
+
+.row {
+  border: black solid 2px;
+}
+
+.col {
+  border: black solid 2px;
 }
