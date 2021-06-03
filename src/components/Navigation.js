@@ -5,10 +5,10 @@ import { LinkContainer } from 'react-router-bootstrap';
 export default function Navigation() {
     return (
         <Navbar bg="dark" expand="lg" variant="dark">
-            <Navbar.Brand href="/">
-                {/* <LinkContainer to="/"> */}
-                    Navigation Bar
-                {/* </LinkContainer> */}
+            <Navbar.Brand>
+                <LinkContainer to="/">
+                    <Nav.Link>This Site</Nav.Link>
+                </LinkContainer>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

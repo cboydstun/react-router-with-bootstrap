@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Contact from './components/Contact';
@@ -14,10 +14,13 @@ export default function App() {
         <div className="App">
             <Router>
                 <Navigation />
-                <Route exact path="/" component={Home}></Route>
-                <Route path="/about" component={About}></Route>
-                <Route path="/contact" component={Contact}></Route>
-                <Route path="/register" component={Register}></Route>
+                <div className="container">
+                    <Route exact path="/" component={Home}></Route>
+                    <Redirect from="/home" to="/" />
+                    <Route path="/about" component={About}></Route>
+                    <Route path="/contact" component={Contact}></Route>
+                    <Route path="/register" component={Register}></Route>
+                </div>
             </Router>
         </div>
     );
