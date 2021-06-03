@@ -13,12 +13,8 @@ $mySize: 2rem;
 }
 
 .nav-link {
-  padding: auto 2rem;
-  margin: auto 2rem;
-}
-
-.row-container {
-  border: black solid 2px;
+  padding: auto $mySize;
+  margin: auto $mySize;
 }
 
 .row {
